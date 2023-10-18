@@ -1,0 +1,10 @@
+%使用前请导入s,t,x,y
+s=uint8(s);
+t=uint8(t);
+x=uint8(x);
+y=uint8(y);
+allpoint_graph=graph(s,t,ones(length(s),1));
+allpoint_graph=simplify(allpoint_graph);
+%x=mod(s,10);
+%y=idivide(s,10)+1;
+myplot=plot(allpoint_graph,'XData',x,'YData',y,'linewidth',2);
